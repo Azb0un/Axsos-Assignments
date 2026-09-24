@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "ComicRelief";
+    src: url(fonts/ComicRelief-Regular.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: "ComicRelief";
+}
+/* top nav css */
+.top-nav {
+    height: 55px;
+    background-color: rgb(0 0 0);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.nav-title , .nav-links , .btn , li {
+    display: inline;
+    text-decoration: none;
+    padding: 0px 10px;
+    color: white;
+}
+#active {
+    font-weight: bold;
+}
+.btn {
+    padding: 3px 15px ;
+    background-color: rgb(23 162 184);
+    color: white;
+    cursor: pointer;
+    font-family: "Comic";
+}
+/*Main container Css */ 
+.main {
+    margin: 0px auto;
+    width: 1100px;
+    height: 1000px; 
+    position: relative;
+}
+.left-side-main {
+    width: 720px;
+    height: 1000px;
+    position: relative;
+    left: 0;
+}
+.right-side-main {
+    width: 377px;
+    height: 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*User Card CSS*/
+.user-card-container {
+    height: 400px;
+    width: 650px;
+    border: 1px grey solid;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.top-user-card {
+    width: 650px;
+    height: 120px;
+    background-color: #17a2b8;
+}
+#profile-name {
+    margin: 50px 0px 20px 25px;
+}
+#profile-paragraph {
+    font-weight: 600;
+    margin: 0px 0px 0px 25px ;
+    display: flex;
+}
+.bio {
+    margin: 20px 25px;
+}
+#location , #gear {
+    height: 20px;
+    margin-right: 15px;
+}
+#user-card-edit-profile {
+    margin: 0px 0px 0px 25px;
+    font-weight: 700;
+    display: flex;
+}
+.profile-pic {
+    height: 100px;
+    width: 100px;
+    border: 6px rgb(240, 232, 232) solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+#jane {
+    height: 100px;
+    width: 100px;
+    border: 3px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+/*edu container CSS*/
+.edu-container {
+height: 350px;
+    width: 650px;
+    border: 1px grey solid;
+    position: absolute;
+    top: 450px;
+    left: 30px;
+}
+.top-nav-edu {
+    height: 45px;
+    background-color: rgb(51 51 51);
+}
+.edu-title {
+    padding: 4px 0px 0px 25px;
+    color: white;
+}
+.m-edu-content {
+    padding: 25px 0px 0px 25px;
+}
+.d-edu-content {
+    padding: 0px 0px 0px 25px;
+    color: rgba(0, 0, 0, 0.4)
+}
+/*connection request CSS*/
+.connection-request {
+    height: 200px;
+    width: 352px;
+    border: 1px grey solid;
+    position: absolute;
+    top: 30px;
+}
+.top-nav-connection {
+    height: 50px;
+    background-color:rgb(51 51 51);
+    color: white;
+    padding: 15px 0px 0px 5px;
+}
+.num-two {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px 15px;
+    margin-right: 5px;
+    background-color: grey;
+}
+.todd-e {
+    height: 75px;
+    width: 352px;
+    position: relative;
+    margin: 5px 0px 0px 0px;
+}
+#todd-e {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 5px 0px 0px 5px;
+    vertical-align: middle;
+}
+#accept {
+    height: 30px;
+    position: absolute;
+    top:  15px;
+    right: 60px;
+    cursor: pointer;
+}
+#ignore {
+    height: 30px;
+    position: absolute;
+    top:  15px;
+    right: 20px;
+    cursor: pointer;
+}
+.phill-k {
+    height: 75px;
+    width: 352px;
+    position: relative;
+    margin: 10px 0px 0px 5px;
+}
+#phill-k {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 5px 0px 0px 5px;
+    vertical-align: middle;
+}
+#accept-1 {
+    height: 30px;
+    position: absolute;
+    top: 155px;
+    right: 60px;
+    cursor: pointer;
+}
+#ignore-1 {
+    height: 30px;
+    position: absolute;
+    top: 155px;
+    right: 20px;
+    cursor: pointer;
+}
+/*your connecions css*/
+.your-connections {
+    height: 355px;
+    width: 352px;
+    border: 1px grey solid;
+    position: absolute;
+    top: 250px;
+}
+.top-nav-your-connection {
+    height: 50px;
+    background-color:rgb(51 51 51);
+    color: white;
+    padding: 15px 0px 0px 5px;
+}
+.fivedoubleo {
+    border: 1px black solid;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    background-color: grey;
+}
+.adrian , .anne , .alayne , .arry {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50% ;
+    vertical-align: middle;
+    margin: 10px 0px 0px 10px;
+}
+.you-connection-footer {
+    border-top: 2px grey solid;
+    width: 352px;
+    height: 65px;
+    margin: 20px 0px 0px 0px;
+    position: relative;
+}
+.view-more {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}

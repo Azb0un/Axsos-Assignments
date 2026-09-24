@@ -1,0 +1,64 @@
+
+@font-face{
+    font-family: 'BadScript';
+    src: url(fonts/BadScript-Regular.ttf);
+}
+.container {
+    height: 400px;
+    width: 650px;
+    border: 1px black solid;
+    margin: 0px auto;
+    position: relative;
+    top: 30px;
+    left: 0px;
+    box-shadow: 10px 10px 5px gray;
+    display: flex;
+    flex-direction: column;
+}
+.top-nav {
+    flex: 1;
+    background-color: #17a2b8;
+}
+.bot-nav {
+    flex: 2;
+}
+.profile-pic {
+    height: 100px;
+    width: 100px;
+    border: 4px grey solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+#icon {
+    height: 100px;
+    width: 100px;
+    border: 2px white solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+h1 {
+    margin: 50px 0px 0px 25px;
+    font-family: 'BadScript', sans-serif;
+}
+p {
+    font-family:'BadScript', sans-serif;
+    font-weight: 600;
+    margin: 0px 0px 0px 25px ;
+}
+#location , #gear {
+    height: 20px;
+    margin-right: 10px;
+}
+a {
+    margin: 0px 0px 0px 25px;
+    font-family: 'BadScript' ,sans-serif;
+    font-weight: 700;
+}
+.bio {
+    margin: 15px 0px ;
+}

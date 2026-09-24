@@ -1,0 +1,43 @@
+Me:- Hi
+GBT:- Hi! 👋 How can I help?
+Me:- Act as beginner-friendly HTML instructor. I am a beginner in Full-Stack development bootcamp, I already know the basic HTML tags like <form>,<input>and <label>, But I haven't used <legend> before.
+     Explain what the <legend> element do, And when I should use it. Use simple English and give one code example.
+GBT:- <legend> is used to give a title or description to a group of related form fields.
+
+You use it together with the <fieldset> element:
+
+<fieldset> → groups related form controls together.
+<legend> → gives that group a name.
+When should you use <legend>?
+
+Use it when several form fields belong to the same topic or question.
+
+For example, if a form asks for a user's favorite programming language, you can group those radio buttons with <fieldset> and describe the group with <legend>:
+
+<form>
+  <fieldset>
+    <legend>Choose your favorite programming language:</legend>
+
+
+    <input type="radio" id="html" name="language" value="html">
+    <label for="html">HTML</label>
+
+
+    <input type="radio" id="css" name="language" value="css">
+    <label for="css">CSS</label>
+
+
+    <input type="radio" id="javascript" name="language" value="javascript">
+    <label for="javascript">JavaScript</label>
+  </fieldset>
+</form>
+
+Here, "Choose your favorite programming language:" is the <legend>. It tells the user what the group of radio buttons is about.
+
+Easy way to remember
+
+Think of <fieldset> as a box that groups related fields, and <legend> as the title written on that box.
+
+It's especially useful for accessibility, because screen readers can use the legend to help users understand what a group of form controls is asking.
+
+Link for conversation :-https://chatgpt.com/share/6a84d949-24d4-83ea-bc3e-894e230410a1

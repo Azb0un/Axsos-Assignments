@@ -1,0 +1,25 @@
+*{
+    color: white;
+    font-family: sans-serif;
+}
+#cloud {
+color:aqua;
+}
+
+h1 {
+    background-color: black;
+
+}
+
+h2 {
+    background-color: #854CA1;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    color: blue;
+    background-color: #96CAFF;
+    text-align: right;
+    text-decoration: underline;
+}
