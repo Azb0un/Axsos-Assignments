@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>VideoLab</title>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="top-nav-tape"></div>
+        <div class="top-nav-content">
+            <div class="title">
+                <h1>VideoLab</h1>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="search">
+            </div>
+            <div class="login">
+                <button>login</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="video-container">
+                <video id="myVideo" width="100%" height="420px" src="videos/bird.mp4" type="video/mp4" muted loop >This video is not supported in your browser</video>
+                <div class="custom-controls">
+                    <button id="playBtn">▶</button>
+                    <input type="range" id="seekBar" value="0" min="0" max="100">
+                    <span id="volumeIcon">🔊</span>
+                    <input type="range" id="volumeBar" value="100" min="0" max="100">
+                    <button id="fullscreenBtn">⛶</button>
+                </div>
+            </div>
+            <div class="video-title">
+                <div class="bio-title">
+                    <h1>A rufous hummingbird</h1>
+                    <p>160.5K views | September 16 2026</p>
+                </div>
+                <div class="sub-btn">
+                    <button onclick="isSubscribed(this)">Subscribe</button>
+                </div>
+            </div>
+            <div class="channel">
+                <img src="images/everett-bumstead-864.avif" alt="Everett Bumstead">
+                <p>Everett Bumstead</p>
+            </div>
+        </div>
+        <div class="up-next">
+            <div class="up-next-header">
+                <p><b>Up Next</b></p>
+            </div>
+            <div class="up-next-videos">
+                <div class="watch-next-video">
+                    <video src="videos/hummingbird perched.mp4" loop muted onmouseover="play()" onmouseout="pause()">this video format is not supported by your browser</video>
+                    <p>Hummingbird Perched</p>
+                </div>
+                <div class="watch-next-video">
+                    <video src="videos/Restless hummingbird.mp4" loop muted onmouseover="play()" onmouseout="pause()">this video format is not supported by your browser</video>
+                    <p>Restless Hummingbird</p>
+                </div>
+                <div class="watch-next-video">
+                    <video src="videos/Vibrant hummingbird.mp4" loop muted onmouseover="play()" onmouseout="pause()">this video format is not supported by your browser</video>
+                    <p>Vibrant Hummingbird</p>
+                </div>
+                <div class="watch-next-video">
+                    <video src="videos/volcano hummingbird.mp4" loop muted onmouseover="play()" onmouseout="pause()">this video format is not supported by your browser</video>
+                    <p>Volcano Hummingbird</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
