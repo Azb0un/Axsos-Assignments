@@ -83,3 +83,6 @@ document.addEventListener('DOMContentLoaded', initVideoPlayer);
 function isSubscribed(element){
     element.innerText="Subscribed"
 }
+function logOut(element){
+    element.innerText="logout"
+}

@@ -61,6 +61,7 @@ button {
     border-radius: 12px;
     overflow: hidden;
     background-color: #000;
+    margin: 10px 0px;
 }
 .video-container video{
     width: 100%;
