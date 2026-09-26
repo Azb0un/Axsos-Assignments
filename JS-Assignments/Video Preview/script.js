@@ -86,3 +86,21 @@ function isSubscribed(element){
 function logOut(element){
     element.innerText="logout"
 }
+function swapVideo(element){
+    const mainVideo = document.getElementById('myVideo');
+    const mainTitle = document.querySelector('.bio-title h1');
+    const clickedVideo = element.querySelector('video');
+    const clickedTitle = element.querySelector('p');
+
+    const tempSrc = mainVideo.src;
+    const tempTitle = mainTitle.textContent;
+
+    mainVideo.src = clickedVideo.src;
+    mainTitle.textContent = clickedTitle.textContent;
+
+    clickedVideo.src = tempSrc;
+    clickedTitle.textContent = tempTitle;
+
+    mainVideo.play();
+    document.getElementById('playBtn').textContent = '⏸';
+}
