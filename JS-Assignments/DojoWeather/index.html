@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DojoWeather</title>
+</head>
+<body>
+    <div class="topNav">
+        <div class="topNavTitle">
+            <h1>DojoWeather</h1>
+        </div>
+        <div class="topNavLists">
+                <li onclick="alert('Loading weather report...')"><h2>Burbank</h2></li>
+                <li onclick="alert('Loading weather report...')"><h2>Chicago</h2></li>
+                <li onclick="alert('Loading weather report...')"><h2>Dallas</h2></li>
+        </div>
+    </div>
+    <div class="container">
+        <div class="containerTopNav">
+            <div class="containerTitle">
+                <h2>San Jose</h2>
+            </div>
+            <div class="tempFormatChanger">
+                <label for="changeTempFormat">show temperature in</label>
+                <select onchange="changeTempFormat(this.value)">
+                    <option value="c">°C</option>
+                    <option value="f">°F</option>
+                </select>
+            </div>
+            
+        </div>
+        <div class="days">
+            <div class="weatherInfo">
+                <h2>Today</h2>
+                <img src="img/some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="temp">
+                        <li><span class="red tempValue" data-celsius="24">24°</span></li>
+                        <li><span class="blue tempValue" data-celsius="18">18°</span></li>
+                </div>
+            </div>
+            <div class="weatherInfo">
+                <h2>Tomorrow</h2>
+                <img src="img/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="temp">
+                    <span class="red tempValue" data-celsius="27">27°</span>
+                    <span class="blue tempValue" data-celsius="19">19°</span>
+                </div>
+            </div>
+            <div class="weatherInfo">
+                <h2>Friday</h2>
+                <img src="img/some_clouds.png" alt="cloud">
+                <p>some clouds</p>
+                <div class="temp">
+                    <span class="red tempValue" data-celsius="21">21°</span>
+                    <span class="blue tempValue" data-celsius="16">16°</span>
+                </div>
+            </div>
+            <div class="weatherInfo">
+                <h2>Saturday</h2>
+                <img src="img/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="temp">
+                    <span class="red tempValue" data-celsius="26">26°</span>
+                    <span class="blue tempValue" data-celsius="21">21°</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookies">
+        <div class="iconCookies">
+            <img src="img/cookie.png" alt="cookie">
+        </div>
+        <div class="cookieBio">
+            <h1>Stop! Cookie time</h1>
+            <h2>We used cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></h2>
+        </div>
+        <div class="cookieBtn">
+            <button onclick="removeCookie()">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
