@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "comic";
+    src: url(fonts/ComicRelief-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "comic";
+}
+h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, button {
+    margin: 0 20px;
+}
+button:active{
+    transform: translate(1px, 1px);
+    box-shadow: none;
+}
+.first-nav {
+height: 60px;
+width: 40%;
+margin: 0 auto;
+background-color: black;
+color: white;
+display: flex;
+align-items: center;
+}
+.sec-nav {
+    height: 60px;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    height: 500px;
+    width: 40%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.user-box {
+    border: 2px solid black;
+    height: 280px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile-pic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.profile-pic img {
+    height: 80px;
+    width: 80px;
+}
+
+.posts-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post {
+    flex: 1;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.post a {
+    margin: 0px 0px;
+}
+.topPost-box , .like-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.like-btn p , .like-btn{
+    margin: 0px 5px;
+}
+button {
+    background-color: yellow;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    padding: 0px 10px;
+}
