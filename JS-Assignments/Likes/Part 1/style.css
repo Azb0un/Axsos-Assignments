@@ -2,8 +2,6 @@
     width: 350px;
     height: 150px;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
 }
 .top-box {
@@ -26,11 +24,10 @@
     margin: 20px 30px;
 }
 button {
-    height: 20px;
     background-color: yellow;
     border: 1px black solid;
     box-shadow: 2px 2px black;
-    padding: 0px 10px;
+    padding: 2px 10px;
 }
 button:active {
     transform: translate(1px, 1px);

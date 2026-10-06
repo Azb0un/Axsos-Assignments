@@ -1,24 +1,12 @@
-const btnNeil = document.querySelector('.likeBtnNeil')
-const btnNichole = document.querySelector('.likeBtnNichol')
-const btnJim = document.querySelector('.likeBtnJim')
+const posts = document.querySelectorAll('.post')
 
-const displayCountNeil = document.querySelector('#countNeil')
-const displayCountNichol = document.querySelector('#countNichol')
-const displayCountJim =  document.querySelector('#countJim')
+posts.forEach(function (post) {
+    const button = post.querySelector('.like-button')
+    const display = post.querySelector('.like-count')
+    let count = 0
 
-var countNeil = 0
-var countNichol = 0
-var countJim = 0
-
-btnNeil.addEventListener('click' , function(){
-    countNeil += 1
-    displayCountNeil.textContent = countNeil
-})
-btnNichole.addEventListener('click', function(){
-    countNichol += 1 
-    displayCountNichol.textContent = countNichol
-})
-btnJim.addEventListener('click', function(){
-    countJim +=1
-    displayCountJim.textContent = countJim
+    button.addEventListener('click', function () {
+        count += 1
+        display.textContent = count
+    })
 })
