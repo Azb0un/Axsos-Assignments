@@ -6,16 +6,18 @@ class User:
 
     def display_user_balance(self):
         print(self.account_balance)
+        return self
 
     def make_deposit(self,amount):
         self.account_balance = self.account_balance + amount
+        return self
 
     def make_withdrawal(self, amount):
         if amount > self.account_balance:
             print("You Dont Have Enough Money")
         else:
             self.account_balance = self.account_balance - amount
-        
+        return self
 
     def transfer_money(self, other_user, amount):
         if amount > self.account_balance:
@@ -23,6 +25,7 @@ class User:
         else:
             self.account_balance -= amount
             other_user.account_balance += amount
+        return self
 
 
 Alli = User("Alli", "a@gmail.com")
@@ -34,27 +37,16 @@ Fatima.display_user_balance()
 
 print()
 
-Alli.make_deposit(200)
-Alli.make_deposit(300)
-Alli.make_deposit(500)
-Alli.make_withdrawal(400)
-Alli.display_user_balance()
+Alli.make_deposit(200).make_deposit(300).make_deposit(500).make_withdrawal(400).display_user_balance()
+
 
 print()
 
-Nasri.make_deposit(400)
-Nasri.make_deposit(400)
-Nasri.make_withdrawal(100)
-Nasri.make_withdrawal(200)
-Nasri.display_user_balance()
+Nasri.make_deposit(400).make_deposit(400).make_withdrawal(100).make_withdrawal(200).display_user_balance()
 
 print()
 
-Fatima.make_deposit(1000)
-Fatima.make_withdrawal(300)
-Fatima.make_withdrawal(300)
-Fatima.make_withdrawal(300)
-Fatima.display_user_balance()
+Fatima.make_deposit(1000).make_withdrawal(300).make_withdrawal(300).make_withdrawal(300).display_user_balance()
 
 print()
 
