@@ -24,12 +24,11 @@ class Slist:
         return self
 
     def print_values(self):
-        runner = self.head
-        while (runner != None):
-            print(runner.value, "->")
-            runner = runner.next
-        print(None)
-        return self
+        current = self.head
+        while current:
+            print(current.value, end=" -> ")
+            current = current.next
+        print("None")
 
     def remove_from_front(self):
         if self.head == None:
