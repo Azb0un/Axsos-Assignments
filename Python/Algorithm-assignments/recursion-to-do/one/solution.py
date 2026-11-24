@@ -4,10 +4,12 @@ def rec_sigma(n):
     if n == 0:
         return 0;
     else:
-        return n + rec_sigma(n-1)
+        if n > 0:
+            return n + rec_sigma(n-1)
+        else:
+            return n + rec_sigma(n + 1)
 
-
-print(rec_sigma(5))
+print(rec_sigma(-5))
 
 def factorial(n):
     if n == 0:
